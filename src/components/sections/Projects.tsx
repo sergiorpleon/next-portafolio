@@ -3,6 +3,7 @@ import { DeveloperProfile } from '@/domain/profile.types';
 import { Section } from '@/components/ui/Section';
 import { Card } from '@/components/ui/Card';
 import { FolderGit2, Github, ExternalLink, Youtube } from 'lucide-react';
+import { ImageSlider } from '@/components/ui/ImageSlider';
 
 interface ProjectsProps {
     profile: DeveloperProfile;
@@ -30,6 +31,13 @@ export function Projects({ profile }: ProjectsProps) {
                                 <FolderGit2 className="w-5 h-5" />
                             </div>
                         </div>
+
+                        {project.images && project.images.length > 0 && (
+                            <ImageSlider
+                                images={project.images.map(img => img.replace('/public', ''))}
+                                title={project.title}
+                            />
+                        )}
 
                         <p className="text-gray-600 dark:text-gray-300 mb-6 flex-grow">
                             {project.description}
@@ -91,8 +99,9 @@ export function Projects({ profile }: ProjectsProps) {
                             </div>
                         </div>
                     </Card>
-                ))}
-            </div>
-        </Section>
+                ))
+                }
+            </div >
+        </Section >
     );
 }

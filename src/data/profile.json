@@ -137,6 +137,7 @@
             "title": "Analizador de Películas con IA",
             "type": "personal",
             "status": "En desarrollo",
+            "year": "2026",
             "description": "Aplicación web para la búsqueda semántica de películas utilizando embeddings y similitud vectorial. El sistema permite realizar consultas en lenguaje natural, generar vectores mediante Gemini u Ollama y obtener resultados relevantes almacenados en PostgreSQL con pgvector. Incluye arquitectura MVC, autenticación de usuarios, exportación de resultados y un pipeline CI/CD con Docker.",
             "stack": [
                 "PHP",
@@ -153,7 +154,29 @@
             ],
             "repo": "https://github.com/sergiorpleon/analizer-pc",
             "demo": "",
-            "images": []
+            "images": [
+                "/public/analizer1.jpg",
+                "/public/analizer2.jpg",
+                "/public/analizer3.jpg",
+                "/public/analizer4.jpg",
+                "/public/analizer5.jpg"
+            ]
+        },
+        {
+            "title": "Aplicación móvil educativa Listen-Mob",
+            "type": "personal",
+            "year": "2025",
+            "description": "Aplicación para la enseñanza de la habilidad de listening en inglés. Permite a los usuarios escuchar un video y responder un cuestionario con diversas tipologías de preguntas, evaluando comprensión auditiva y mostrando retroalimentación. Desarrollada con Flutter, implementa una gestión reactiva del estado, separando eficientemente la lógica de negocio de la interfaz de usuario (UI).",
+            "stack": [
+                "Flutter",
+                "Dart",
+                "Android Studio"
+            ],
+            "repo": "https://github.com/sergiorpleon/english_guiz_b",
+            "images": [
+                "/public/group1.jpg",
+                "/public/group2.jpg"
+            ]
         },
         {
             "title": "Final Project LMS - CS50 Web Programming",
@@ -173,7 +196,12 @@
             "repo": "https://github.com/sergiorpleon/code-edx-harvard-courses/tree/main/python%20web/Final%20project/final",
             "video": "hhttps://www.youtube.com/watch?v=vE6DbT-V7B4",
             "images": [
-                "/public/lms1.jpg"
+                "/public/lms0.jpg",
+                "/public/lms1.jpg",
+                "/public/lms2.jpg",
+                "/public/lms3.jpg",
+                "/public/lms4.jpg",
+                "/public/lms5.jpg"
             ]
         },
         {
@@ -193,7 +221,11 @@
             "repo": "https://github.com/sergiorpleon/code-edx-harvard-courses/tree/main/computer%20science/Final%20Project/project",
             "video": "https://youtu.be/tuH9zVq6K6A",
             "images": [
-                "/public/event1.jpg"
+                "/public/event1.jpg",
+                "/public/event2.jpg",
+                "/public/event3.jpg",
+                "/public/event4.jpg",
+                "/public/event5.jpg"
             ]
         },
         {

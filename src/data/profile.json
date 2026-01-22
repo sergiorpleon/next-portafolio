@@ -1,0 +1,240 @@
+{
+    "personal": {
+        "fullName": "Sergio Ramón Pérez León",
+        "email": "sergiorpleon@gmail.com",
+        "nationality": "España",
+        "location": {
+            "province": "Alicante",
+            "country": "España"
+        },
+        "linkedin": "https://linkedin.com/in/sergiorpleon",
+        "github": "https://github.com/sergiorpleon"
+    },
+    "professionalSummary": {
+        "title": "Full Stack Software Developer",
+        "yearsOfExperience": 10,
+        "description": "Licenciado en Ciencias de la Computación y desarrollador de software Full Stack con amplia experiencia en desarrollo web, backend y aplicaciones móviles. Especializado en Python, JavaScript y React, con fuerte capacidad de adaptación y trabajo en equipos multidisciplinares."
+    },
+    "roles": [
+        "Analista Programador",
+        "Desarrollador Web",
+        "Desarrollador Móvil",
+        "Programador Full Stack"
+    ],
+    "experience": [
+        {
+            "company": "Universidad Central \"Marta Abreu\" de Las Villas",
+            "sector": "Educación",
+            "role": "Programador Senior / Administrador E-learning",
+            "startDate": "2015-09",
+            "endDate": "2025-04",
+            "durationYears": 9.6,
+            "responsibilities": [
+                "Desarrollo y mantenimiento de aplicaciones web y móviles educativas",
+                "Administración integral de plataforma Moodle (LMS)",
+                "Docencia y soporte técnico en sede pedagógica"
+            ],
+            "technologies": [
+                "Moodle",
+                "Wordpress",
+                "Symfony",
+                "Django",
+                "PHP",
+                "MySQL",
+                "JavaScript",
+                "HTML",
+                "CSS",
+                "Android",
+                "Flutter"
+            ]
+        },
+        {
+            "company": "Illuminai",
+            "sector": "Software / IoT",
+            "role": "Programador Full Stack",
+            "startDate": "2019-08",
+            "endDate": "2021-02",
+            "durationYears": 1.5,
+            "responsibilities": [
+                "Diseño e implementación de interfaces SPA de alto rendimiento para el control y monitorización de ecosistemas IoT en tiempo real.",
+                "Desarrollo de APIs REST para la comunicación entre dispositivos IoT, aplicaciones móviles y servidores.",
+                "Despliegue de aplicaciones móviles híbridas mediante el empaquetado de SPAs en Apache Cordova.",
+                "Creación y despliegue de Skills de Amazon Alexa para la interacción por voz con sistemas inteligentes."
+            ],
+            "technologies": [
+                "Python",
+                "Flask",
+                "SQLAlchemy",
+                "Marshmallow",
+                "React",
+                "Redux",
+                "Redux-Saga",
+                "Cordova",
+                "IoT",
+                "Alexa Skills"
+            ]
+        },
+        {
+            "company": "MINED",
+            "sector": "Educación",
+            "role": "Desarrollador de Software",
+            "startDate": "2014-09",
+            "endDate": "2016-04",
+            "durationYears": 1.6,
+            "responsibilities": [
+                "Desarrollo y optimización de software interactivo en ActionScript para la Colección Nacional \"A jugar\""
+            ],
+            "technologies": [
+                "Flash",
+                "ActionScript"
+            ]
+        },
+        {
+            "company": "ADWEB Solutions",
+            "sector": "Software",
+            "role": "Desarrollador Web WordPress",
+            "startDate": "2015-06",
+            "endDate": "2015-09",
+            "durationYears": 0.3,
+            "responsibilities": [
+                "Implementación y personalización de sitios WordPress",
+                "Configuración de plugins y themes",
+                "Migración y mantenimiento de sitios web"
+            ],
+            "technologies": [
+                "WordPress",
+                "PHP",
+                "MySQL"
+            ]
+        },
+        {
+            "company": "Freelance",
+            "sector": "Software",
+            "role": "Desarrollador Android",
+            "startDate": "2015-05",
+            "endDate": "2015-03",
+            "durationYears": 0.3,
+            "responsibilities": [
+                "Desarrollo de sistemas digitales de recolección de datos mediante aplicaciones de encuestas dinámicas con persistencia en bases de datos externas.",
+                "Diseño y arquitectura de interfaces de usuario (UI/UX) enfocadas en la usabilidad y la visualización eficiente de información."
+            ],
+            "technologies": [
+                "Android",
+                "Java",
+                "Postgres"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "title": "Plataforma E-learning Universitaria",
+            "type": "professional",
+            "status": "archived",
+            "description": "Desarrollo y mantenimiento de aplicaciones web y móviles educativas. Administración integral del LMS Moodle y docencia de soporte técnico.",
+            "stack": [
+                "PHP",
+                "MySQL",
+                "JavaScript",
+                "Moodle"
+            ],
+            "images": []
+        }
+    ],
+    "education": [
+        {
+            "degree": "Licenciatura en Ciencias de la Computación",
+            "institution": "Universidad Central \"Marta Abreu\" de Las Villas",
+            "startYear": 2008,
+            "endYear": 2013,
+            "location": "España"
+        }
+    ],
+    "skills": {
+        "languages": [
+            "JavaScript",
+            "TypeScript",
+            "Python",
+            "Java",
+            "PHP",
+            "C"
+        ],
+        "frontend": [
+            "React",
+            "Next.js",
+            "Redux",
+            "HTML5",
+            "CSS3",
+            "Tailwind CSS",
+            "jQuery"
+        ],
+        "backend": [
+            "Flask",
+            "Django",
+            "Laravel",
+            "Symfony"
+        ],
+        "mobile": [
+            "Android",
+            "Flutter",
+            "Apache Cordova"
+        ],
+        "databases": [
+            "MySQL",
+            "MariaDB",
+            "Postgres",
+            "SQL"
+        ],
+        "tools": [
+            "GitHub",
+            "Android Studio"
+        ],
+        "other": [
+            "Inteligencia Artificial",
+            "Desarrollo de Software",
+            "Aplicaciones Web",
+            "IoT"
+        ]
+    },
+    "courses": [
+        {
+            "name": "CS50 Certificate",
+            "course": "HarvardX: CS50's Introduction to Artificial Intelligence with Python",
+            "provider": "Harvard University",
+            "year": 2025,
+            "hours": 70
+        },
+        {
+            "name": "CS50 Certificate",
+            "course": "HarvardX: CS50's Web Programming with Python and JavaScript",
+            "provider": "Harvard University",
+            "year": 2024,
+            "hours": 72
+        },
+        {
+            "name": "CS50 Certificate",
+            "course": "HarvardX: CS50's Introduction to Computer Science",
+            "provider": "Harvard University",
+            "year": 2024,
+            "hours": 72
+        },
+        {
+            "name": "CS50 Certificate",
+            "course": "HarvardX: CS50's Introduction to Programming with Python",
+            "provider": "Harvard University",
+            "year": 2024,
+            "hours": 30
+        }
+    ],
+    "languages": [
+        {
+            "language": "Español",
+            "writtenLevel": "Excelente",
+            "spokenLevel": "Nativo"
+        },
+        {
+            "language": "Inglés",
+            "writtenLevel": "Medio",
+            "spokenLevel": "Elemental"
+        }
+    ]
+}

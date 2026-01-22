@@ -13,6 +13,7 @@ export const useChatStorage = () => {
         const stored = sessionStorage.getItem(STORAGE_KEY);
         if (stored) {
             try {
+                // eslint-disable-next-line
                 setMessages(JSON.parse(stored));
             } catch (e) {
                 console.error('Failed to parse chat history', e);

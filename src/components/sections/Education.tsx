@@ -2,7 +2,7 @@ import React from 'react';
 import { DeveloperProfile } from '@/domain/profile.types';
 import { Section } from '@/components/ui/Section';
 import { Card } from '@/components/ui/Card';
-import { GraduationCap, Award, BookOpen } from 'lucide-react';
+import { GraduationCap, Award } from 'lucide-react';
 
 interface EducationProps {
     profile: DeveloperProfile;

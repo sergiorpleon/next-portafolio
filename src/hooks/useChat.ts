@@ -1,5 +1,5 @@
 import { useState, useCallback } from 'react';
-import { Message, Role } from '@/domain/chat.types';
+import { Message } from '@/domain/chat.types';
 import { useChatStorage } from './useChatStorage';
 
 export const useChat = () => {

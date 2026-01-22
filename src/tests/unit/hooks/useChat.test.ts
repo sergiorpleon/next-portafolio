@@ -1,12 +1,13 @@
 import { renderHook, act } from '@testing-library/react';
 import { describe, it, expect, beforeEach, vi, afterEach } from 'vitest';
 import { useChat } from '@/hooks/useChat';
+import { Message } from '@/domain/chat.types';
 
 // Mock de useChatStorage para aislar la lógica del hook de chat
 // Evitamos que use el sessionStorage real durante estos tests
 const mockSaveMessages = vi.fn();
 const mockClearHistory = vi.fn();
-const mockMessages: any[] = [];
+const mockMessages: Message[] = [];
 
 vi.mock('@/hooks/useChatStorage', () => ({
     useChatStorage: () => ({

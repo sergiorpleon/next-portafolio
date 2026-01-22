@@ -1,6 +1,7 @@
 import React from 'react';
+import Image from 'next/image';
 import { DeveloperProfile } from '@/domain/profile.types';
-import { Github, Linkedin, Mail, MapPin, Download } from 'lucide-react';
+import { Github, Linkedin, Mail, MapPin } from 'lucide-react';
 import { Section } from '@/components/ui/Section';
 
 interface HeroProps {
@@ -16,10 +17,13 @@ export function Hero({ profile }: HeroProps) {
                 {personal.avatarUrl && (
                     <div className="flex justify-center mb-8">
                         <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl ring-4 ring-blue-100 dark:ring-blue-900/20">
-                            <img
+                            <Image
                                 src={personal.avatarUrl}
                                 alt={personal.fullName}
-                                className="w-full h-full object-cover"
+                                fill
+                                className="object-cover"
+                                sizes="(max-width: 768px) 128px, 160px"
+                                priority
                             />
                         </div>
                     </div>

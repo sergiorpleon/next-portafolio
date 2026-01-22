@@ -24,7 +24,7 @@ export async function POST(req: Request) {
         // We only take the last 10 messages to avoid token limits and keep context relevant
         const formattedHistory = history
             .slice(-10)
-            .map((msg: any) => ({
+            .map((msg: { role: string; content: string }) => ({
                 role: msg.role === 'user' ? 'user' : 'model',
                 parts: msg.content
             }));

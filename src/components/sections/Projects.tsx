@@ -2,7 +2,7 @@ import React from 'react';
 import { DeveloperProfile } from '@/domain/profile.types';
 import { Section } from '@/components/ui/Section';
 import { Card } from '@/components/ui/Card';
-import { FolderGit2, Github, ExternalLink } from 'lucide-react';
+import { FolderGit2, Github, ExternalLink, Youtube } from 'lucide-react';
 
 interface ProjectsProps {
     profile: DeveloperProfile;
@@ -20,10 +20,10 @@ export function Projects({ profile }: ProjectsProps) {
                                     {project.title}
                                 </h3>
                                 <span className={`inline-block mt-1 text-xs font-medium px-2 py-0.5 rounded-full ${project.type === 'professional'
-                                        ? 'bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300'
-                                        : 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-300'
+                                    ? 'bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300'
+                                    : 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-300'
                                     }`}>
-                                    {project.type === 'professional' ? 'Profesional' : 'Personal'}
+                                    {project.type}
                                 </span>
                             </div>
                             <div className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400">
@@ -47,28 +47,46 @@ export function Projects({ profile }: ProjectsProps) {
                                 ))}
                             </div>
 
-                            <div className="flex gap-3 pt-4 border-t border-gray-100 dark:border-gray-800">
-                                {project.repo && (
-                                    <a
-                                        href={project.repo}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="flex items-center text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
-                                    >
-                                        <Github className="w-4 h-4 mr-2" />
-                                        Código
-                                    </a>
-                                )}
-                                {project.demo && (
-                                    <a
-                                        href={project.demo}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="flex items-center text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline transition-all"
-                                    >
-                                        <ExternalLink className="w-4 h-4 mr-2" />
-                                        Demo
-                                    </a>
+                            <div className="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-800">
+                                <div className="flex gap-3">
+                                    {project.repo && (
+                                        <a
+                                            href={project.repo}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="flex items-center text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
+                                        >
+                                            <Github className="w-4 h-4 mr-2" />
+                                            Código
+                                        </a>
+                                    )}
+                                    {project.video && (
+                                        <a
+                                            href={project.video}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="flex items-center text-sm font-medium text-red-600 dark:text-red-400 hover:text-red-700 dark:hover:text-red-300 transition-colors"
+                                        >
+                                            <Youtube className="w-4 h-4 mr-2" />
+                                            Video
+                                        </a>
+                                    )}
+                                    {project.demo && (
+                                        <a
+                                            href={project.demo}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="flex items-center text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline transition-all"
+                                        >
+                                            <ExternalLink className="w-4 h-4 mr-2" />
+                                            Demo
+                                        </a>
+                                    )}
+                                </div>
+                                {project.year && (
+                                    <span className="text-sm text-gray-500 dark:text-gray-400 font-medium">
+                                        {project.year}
+                                    </span>
                                 )}
                             </div>
                         </div>

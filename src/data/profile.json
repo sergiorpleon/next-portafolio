@@ -8,7 +8,8 @@
             "country": "España"
         },
         "linkedin": "https://linkedin.com/in/sergiorpleon",
-        "github": "https://github.com/sergiorpleon"
+        "github": "https://github.com/sergiorpleon",
+        "avatarUrl": "https://media.licdn.com/dms/image/v2/D4E03AQFW8AIuym4f-g/profile-displayphoto-shrink_400_400/B4EZc751ygHYAg-/0/1749056708102?e=1770854400&v=beta&t=VKaFzCxT8vafGYxCAyeU0-I4z-Pe6HTmVi1rm_ooC78"
     },
     "professionalSummary": {
         "title": "Full Stack Software Developer",
@@ -25,27 +26,32 @@
         {
             "company": "Universidad Central \"Marta Abreu\" de Las Villas",
             "sector": "Educación",
-            "role": "Programador Senior / Administrador E-learning",
+            "role": "Programador / Administrador E-learning",
             "startDate": "2015-09",
             "endDate": "2025-04",
             "durationYears": 9.6,
             "responsibilities": [
-                "Desarrollo y mantenimiento de aplicaciones web y móviles educativas",
-                "Administración integral de plataforma Moodle (LMS)",
-                "Docencia y soporte técnico en sede pedagógica"
+                "Creación y personalización de sitios WordPress, incluyendo desarrollo de child themes y adaptación de plugins. Aprendí a optimizar UX/UI y a mantener sitios dinámicos y seguros.",
+                "Desarrollo de aplicaciones móviles con interfaces interactivas, navegación entre pantallas, persistencia de datos y elementos multimedias.",
+                "Desarrollo aplicaciones web completas, creando interfaces dinámicas y sistemas backend escalables y seguros.",
+                "Administración integral de plataforma Moodle (LMS) y desarrollo de plugin.",
+                "Docencia y soporte técnico en sede pedagógica."
             ],
             "technologies": [
                 "Moodle",
                 "Wordpress",
-                "Symfony",
-                "Django",
                 "PHP",
                 "MySQL",
-                "JavaScript",
                 "HTML",
                 "CSS",
+                "JavaScript",
+                "React",
+                "Symfony",
+                "Django",
                 "Android",
-                "Flutter"
+                "Flutter",
+                "Dart",
+                "SQLite"
             ]
         },
         {
@@ -56,37 +62,22 @@
             "endDate": "2021-02",
             "durationYears": 1.5,
             "responsibilities": [
-                "Diseño e implementación de interfaces SPA de alto rendimiento para el control y monitorización de ecosistemas IoT en tiempo real.",
-                "Desarrollo de APIs REST para la comunicación entre dispositivos IoT, aplicaciones móviles y servidores.",
-                "Despliegue de aplicaciones móviles híbridas mediante el empaquetado de SPAs en Apache Cordova.",
-                "Creación y despliegue de Skills de Amazon Alexa para la interacción por voz con sistemas inteligentes."
+                "Diseñé e implementé interfaces web SPA de alto rendimiento con dashboards interactivos, visualización de datos y manejo de rutas y estado global.",
+                "Desarrollé APIs REST para la comunicación entre dispositivos IoT, aplicaciones móviles y servidores, incluyendo gestión de bases de datos y autenticación de usuarios.",
+                "Desplegué aplicaciones móviles híbridas mediante Apache Cordova.",
+                "Creé y desplegué Alexa Skills para interacción por voz con nuestro sistemas.",
+                "Todo el desarrollo se realizó bajo metodologías ágiles, logrando soluciones escalables y adaptables para la monitorización de ecosistemas IoT en tiempo real."
             ],
             "technologies": [
                 "Python",
                 "Flask",
                 "SQLAlchemy",
-                "Marshmallow",
                 "React",
                 "Redux",
                 "Redux-Saga",
                 "Cordova",
                 "IoT",
                 "Alexa Skills"
-            ]
-        },
-        {
-            "company": "MINED",
-            "sector": "Educación",
-            "role": "Desarrollador de Software",
-            "startDate": "2014-09",
-            "endDate": "2016-04",
-            "durationYears": 1.6,
-            "responsibilities": [
-                "Desarrollo y optimización de software interactivo en ActionScript para la Colección Nacional \"A jugar\""
-            ],
-            "technologies": [
-                "Flash",
-                "ActionScript"
             ]
         },
         {
@@ -97,14 +88,15 @@
             "endDate": "2015-09",
             "durationYears": 0.3,
             "responsibilities": [
-                "Implementación y personalización de sitios WordPress",
-                "Configuración de plugins y themes",
-                "Migración y mantenimiento de sitios web"
+                "Implementación y personalización de sitios WordPress.",
+                "Configuración de plugins y temas.",
+                "Migración y mantenimiento de sitios web."
             ],
             "technologies": [
                 "WordPress",
                 "PHP",
-                "MySQL"
+                "MySQL",
+                "WooCommerce"
             ]
         },
         {
@@ -123,21 +115,101 @@
                 "Java",
                 "Postgres"
             ]
+        },
+        {
+            "company": "MINED",
+            "sector": "Educación",
+            "role": "Desarrollador de Software",
+            "startDate": "2014-09",
+            "endDate": "2016-04",
+            "durationYears": 1.6,
+            "responsibilities": [
+                "Desarrollo de software interactivo educativo, lógica de programación en Flash, animaciones y experiencia en software para aprendizaje preescolar como fueron la Colección Nacional \"A jugar\" y \"Defensito\"."
+            ],
+            "technologies": [
+                "Flash",
+                "ActionScript"
+            ]
         }
     ],
     "projects": [
         {
-            "title": "Plataforma E-learning Universitaria",
-            "type": "professional",
-            "status": "archived",
-            "description": "Desarrollo y mantenimiento de aplicaciones web y móviles educativas. Administración integral del LMS Moodle y docencia de soporte técnico.",
+            "title": "Analizador de Películas con IA",
+            "type": "personal",
+            "status": "En desarrollo",
+            "description": "Aplicación web para la búsqueda semántica de películas utilizando embeddings y similitud vectorial. El sistema permite realizar consultas en lenguaje natural, generar vectores mediante Gemini u Ollama y obtener resultados relevantes almacenados en PostgreSQL con pgvector. Incluye arquitectura MVC, autenticación de usuarios, exportación de resultados y un pipeline CI/CD con Docker.",
             "stack": [
                 "PHP",
-                "MySQL",
-                "JavaScript",
-                "Moodle"
+                "PostgreSQL",
+                "pgvector",
+                "Gemini",
+                "Ollama",
+                "Docker",
+                "Docker Compose",
+                "GitHub Actions",
+                "Tailwind CSS",
+                "MVC",
+                "PHPUnit"
             ],
+            "repo": "https://github.com/sergiorpleon/analizer-pc",
+            "demo": "",
             "images": []
+        },
+        {
+            "title": "Final Project LMS - CS50 Web Programming",
+            "type": "academic",
+            "status": "completed",
+            "year": "2024",
+            "description": "Proyecto final del curso CS50 Web Programming con Python y JavaScript. Desarrollo de un LMS (Learning Management System) donde los usuarios pueden registrarse, crear cursos, inscribirse en cursos, acceder a contenidos, realizar tareas y ser calificados por el profesor. Incluye funcionalidades de creación y edición de cursos, gestión de recursos (Label, Page, Task), y seguimiento de actividades de los estudiantes.",
+            "stack": [
+                "Python",
+                "JavaScript",
+                "Django",
+                "HTML",
+                "CSS",
+                "SQLite",
+                "Bootstrap"
+            ],
+            "repo": "https://github.com/sergiorpleon/code-edx-harvard-courses/tree/main/python%20web/Final%20project/final",
+            "video": "hhttps://www.youtube.com/watch?v=vE6DbT-V7B4",
+            "images": [
+                "/public/lms1.jpg"
+            ]
+        },
+        {
+            "title": "Final Project Live Event Tracker Web App - CS50 Computer Science",
+            "type": "academic",
+            "status": "completed",
+            "year": "2024",
+            "description": "Aplicación web para seguir eventos 'minuto a minuto' como partidos de fútbol, elecciones u otros eventos en directo. Permite crear eventos, añadir narraciones y encuestas de hasta 5 opciones. Los usuarios pueden participar en encuestas, ver narraciones, comentar y cargar más comentarios en bloques de 10. Las actualizaciones se muestran automáticamente a los usuarios que siguen el evento mediante websockets.",
+            "stack": [
+                "JavaScript",
+                "Python",
+                "React",
+                "Flask",
+                "HTML",
+                "CSS"
+            ],
+            "repo": "https://github.com/sergiorpleon/code-edx-harvard-courses/tree/main/computer%20science/Final%20Project/project",
+            "video": "https://youtu.be/tuH9zVq6K6A",
+            "images": [
+                "/public/event1.jpg"
+            ]
+        },
+        {
+            "title": "Final Project Maze Generator & Solver - CS50 Python",
+            "type": "academic",
+            "status": "completed",
+            "year": "2024",
+            "description": "Proyecto final del curso Introducción a la Programación con Python de CS50. Permite generar laberintos con rutas definidas, resolverlos, modificar laberintos existentes, guardar puntuaciones en CSV y visualizar los laberintos con letras o emojis. Incluye funcionalidades de validación de rutas, cifrado de puntuaciones y creación de laberintos personalizados.",
+            "stack": [
+                "Python"
+            ],
+            "repo": "https://github.com/sergiorpleon/code-edx-harvard-courses/tree/main/python/project",
+            "video": "https://youtu.be/jM09vA3A0-M",
+            "images": [
+                "/public/maze1.jpg"
+            ]
         }
     ],
     "education": [
@@ -146,7 +218,7 @@
             "institution": "Universidad Central \"Marta Abreu\" de Las Villas",
             "startYear": 2008,
             "endYear": 2013,
-            "location": "España"
+            "location": "Cuba"
         }
     ],
     "skills": {
@@ -164,14 +236,13 @@
             "Redux",
             "HTML5",
             "CSS3",
+            "Bootstrap",
             "Tailwind CSS",
             "jQuery"
         ],
         "backend": [
             "Flask",
-            "Django",
-            "Laravel",
-            "Symfony"
+            "Django"
         ],
         "mobile": [
             "Android",
@@ -185,14 +256,17 @@
             "SQL"
         ],
         "tools": [
+            "Git",
             "GitHub",
-            "Android Studio"
+            "Docker"
         ],
-        "other": [
-            "Inteligencia Artificial",
-            "Desarrollo de Software",
-            "Aplicaciones Web",
-            "IoT"
+        "other": [],
+        "operational": [
+            "Spring",
+            "Angular",
+            "MongoDB",
+            "SOLID",
+            "CI/CD"
         ]
     },
     "courses": [

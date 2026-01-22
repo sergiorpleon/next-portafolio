@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { buildSystemPrompt } from '@/utils/promptBuilder';
-import { sendMessageToGemini } from '@/services/ai.service';
+import { sendMessageToAI } from '@/services/ai.service';
 import profileData from '@/data/profile.json';
 import { DeveloperProfile } from '@/domain/profile.types';
 
@@ -29,13 +29,13 @@ export async function POST(req: Request) {
                 parts: msg.content
             }));
 
-        const response = await sendMessageToGemini(systemPrompt, message, formattedHistory);
+        const response = await sendMessageToAI(systemPrompt, message, formattedHistory);
 
         return NextResponse.json({ response });
     } catch (error) {
         console.error('Error in chat API:', error);
         return NextResponse.json(
-            { error: 'Internal Server Error' },
+            { error: error instanceof Error ? error.message : 'Internal Server Error' },
             { status: 500 }
         );
     }

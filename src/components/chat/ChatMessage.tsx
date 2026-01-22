@@ -14,12 +14,15 @@ export function ChatMessage({ message }: ChatMessageProps) {
     return (
         <div className={clsx(
             "flex w-full mb-4",
+            // Alineación: izquierda para bot, derecha para usuario
             isBot ? "justify-start" : "justify-end"
         )}>
             <div className={clsx(
                 "flex max-w-[85%] md:max-w-[75%] gap-3",
+                // Orden de elementos (avatar vs mensaje): normal para bot, invertido para usuario
                 isBot ? "flex-row" : "flex-row-reverse"
             )}>
+                {/* Avatar */}
                 <div className={clsx(
                     "flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center",
                     isBot ? "bg-blue-100 text-blue-600 dark:bg-blue-900/30 dark:text-blue-300" : "bg-gray-200 text-gray-600 dark:bg-gray-700 dark:text-gray-300"
@@ -27,6 +30,7 @@ export function ChatMessage({ message }: ChatMessageProps) {
                     {isBot ? <Bot className="w-5 h-5" /> : <User className="w-5 h-5" />}
                 </div>
 
+                {/* Contenido del mensaje */}
                 <div className={clsx(
                     "p-3 rounded-2xl text-sm leading-relaxed shadow-sm",
                     isBot
@@ -34,6 +38,7 @@ export function ChatMessage({ message }: ChatMessageProps) {
                         : "bg-blue-600 text-white rounded-tr-none"
                 )}>
                     <div className="prose prose-sm dark:prose-invert max-w-none">
+                        {/* Renderizado de Markdown para respuestas ricas (listas, código, negritas) */}
                         <ReactMarkdown>{message.content}</ReactMarkdown>
                     </div>
                 </div>

@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState, useEffect, useRef } from 'react';
 import { useChat } from '@/hooks/useChat';
 import { ChatInput } from './ChatInput';
@@ -6,10 +8,12 @@ import { MessageCircle, X, Loader2, Trash2 } from 'lucide-react';
 import { clsx } from 'clsx';
 
 export function Chat() {
+    // Hook principal que maneja toda la lógica del chat (estado, envío, persistencia)
     const { messages, sendMessage, clearHistory, isLoading, isInitialized } = useChat();
     const [isOpen, setIsOpen] = useState(false);
     const messagesEndRef = useRef<HTMLDivElement>(null);
 
+    // Scroll automático al último mensaje cuando cambia la lista de mensajes o se abre el chat
     const scrollToBottom = () => {
         messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
     };
@@ -20,6 +24,7 @@ export function Chat() {
         }
     }, [messages, isOpen]);
 
+    // No renderizamos nada hasta que el almacenamiento esté inicializado para evitar flash de contenido
     if (!isInitialized) return null;
 
     return (

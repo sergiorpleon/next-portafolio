@@ -13,6 +13,17 @@ export function Hero({ profile }: HeroProps) {
     return (
         <Section className="min-h-[90vh] flex flex-col justify-center items-center text-center pt-20">
             <div className="space-y-6 max-w-4xl">
+                {personal.avatarUrl && (
+                    <div className="flex justify-center mb-8">
+                        <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl ring-4 ring-blue-100 dark:ring-blue-900/20">
+                            <img
+                                src={personal.avatarUrl}
+                                alt={personal.fullName}
+                                className="w-full h-full object-cover"
+                            />
+                        </div>
+                    </div>
+                )}
 
                 <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-gray-900 dark:text-white">
                     Hola, soy <br />

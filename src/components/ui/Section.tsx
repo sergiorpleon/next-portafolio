@@ -13,11 +13,11 @@ export function Section({ title, subtitle, children, className, id, ...props }: 
     return (
         <section
             id={id}
-            className={twMerge("py-16 md:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto", className)}
+            className={twMerge("py-8 md:py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto", className)}
             {...props}
         >
             {(title || subtitle) && (
-                <div className="mb-12 text-center">
+                <div className="mb-6 text-center">
                     {title && (
                         <h2 className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-violet-600 dark:from-blue-400 dark:to-violet-400 mb-4">
                             {title}

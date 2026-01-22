@@ -10,6 +10,7 @@ export interface PersonalInfo {
     location: Location;
     linkedin: string;
     github: string;
+    avatarUrl?: string;
 }
 
 export interface ProfessionalSummary {
@@ -31,11 +32,14 @@ export interface Experience {
 
 export interface Project {
     title: string;
-    type: "professional" | "personal";
+    type: "professional" | "personal" | "academic";
+    status?: string;
+    year: string;
     description: string;
     stack: string[];
     repo?: string;
     demo?: string;
+    video?: string;
     images?: string[];
 }
 
@@ -69,17 +73,6 @@ export interface Language {
     language: string;
     writtenLevel: string;
     spokenLevel: string;
-}
-
-export interface Project {
-    title: string;
-    type: "professional" | "personal";
-    status?: string;
-    description: string;
-    stack: string[];
-    repo?: string;
-    demo?: string;
-    images?: string[];
 }
 
 export interface DeveloperProfile {

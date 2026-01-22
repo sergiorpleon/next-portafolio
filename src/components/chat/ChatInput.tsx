@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState, useRef, useEffect } from 'react';
 import { Send } from 'lucide-react';
 
@@ -10,6 +12,7 @@ export function ChatInput({ onSend, isLoading }: ChatInputProps) {
     const [input, setInput] = useState('');
     const textareaRef = useRef<HTMLTextAreaElement>(null);
 
+    // Manejo del envío del formulario
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         if (input.trim() && !isLoading) {
@@ -18,6 +21,7 @@ export function ChatInput({ onSend, isLoading }: ChatInputProps) {
         }
     };
 
+    // Permitir enviar con Enter (sin Shift)
     const handleKeyDown = (e: React.KeyboardEvent) => {
         if (e.key === 'Enter' && !e.shiftKey) {
             e.preventDefault();
@@ -25,6 +29,7 @@ export function ChatInput({ onSend, isLoading }: ChatInputProps) {
         }
     };
 
+    // Ajuste automático de altura del textarea
     useEffect(() => {
         if (textareaRef.current) {
             textareaRef.current.style.height = 'auto';

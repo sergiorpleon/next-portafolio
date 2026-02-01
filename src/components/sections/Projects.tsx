@@ -11,7 +11,7 @@ interface ProjectsProps {
 
 export function Projects({ profile }: ProjectsProps) {
     return (
-        <Section title="Portfolio de Proyectos" id="projects">
+        <Section title="Portafolio de Proyectos" id="projects">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {profile.projects.map((project, index) => (
                     <Card key={index} className="flex flex-col h-full hover:border-blue-500/50 transition-all hover:-translate-y-1">

@@ -176,7 +176,8 @@
             "images": [
                 "/public/group1.jpg",
                 "/public/group2.jpg"
-            ]
+            ],
+            "demo": "https://english-quiz-build.vercel.app/"
         },
         {
             "title": "Final Project LMS - CS50 Web Programming",

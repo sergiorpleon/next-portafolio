@@ -13,8 +13,8 @@ export default function Home() {
   return (
     <div className="space-y-12 md:space-y-24 pb-24">
       <Hero profile={profile} />
-      <Experience profile={profile} />
       <Projects profile={profile} />
+      <Experience profile={profile} />
       <Skills profile={profile} />
       <Education profile={profile} />
     </div>

@@ -65,7 +65,7 @@
                 "Diseñé e implementé interfaces web SPA de alto rendimiento con dashboards interactivos, visualización de datos y manejo de rutas y estado global.",
                 "Desarrollé APIs REST para la comunicación entre dispositivos IoT, aplicaciones móviles y servidores, incluyendo gestión de bases de datos y autenticación de usuarios.",
                 "Desplegué aplicaciones móviles híbridas mediante Apache Cordova.",
-                "Creé y desplegué Alexa Skills para interacción por voz con nuestro sistemas.",
+                "Creé y desplegué Alexa Skills para interacción por voz con el sistema.",
                 "Todo el desarrollo se realizó bajo metodologías ágiles, logrando soluciones escalables y adaptables para la monitorización de ecosistemas IoT en tiempo real."
             ],
             "technologies": [
@@ -202,7 +202,8 @@
                 "/public/lms3.jpg",
                 "/public/lms4.jpg",
                 "/public/lms5.jpg"
-            ]
+            ],
+            "demo": "https://lms-minimalista.vercel.app/"
         },
         {
             "title": "Final Project Live Event Tracker Web App - CS50 Computer Science",
@@ -226,7 +227,8 @@
                 "/public/event3.jpg",
                 "/public/event4.jpg",
                 "/public/event5.jpg"
-            ]
+            ],
+            "demo": "https://terrible-karina-sergiorpleon-4bd59301.koyeb.app/"
         },
         {
             "title": "Final Project Maze Generator & Solver - CS50 Python",
